@@ -1,0 +1,66 @@
+/* Base reset and full height layout */
+html, body {
+  height: 100%; /* ensure body fills the viewport */
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* page at least full viewport height */
+  font-family: Arial, sans-serif;
+  line-height: 1;
+  background-color: #fff8f0; /* warm light background */
+  color: #333; /* dark text */
+}
+
+/* HERO SECTION */
+header.hero {
+  background: #f5cda1; /* warm caramel color */
+  color: #333;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+/* MAIN CONTENT */
+main {
+  flex: 1; /* takes remaining space, pushes footer down */
+  padding: 2rem;
+  max-width: 56rem;
+  margin: 5rem;
+}
+
+main h2 {
+  margin-bottom: 1rem; /* space below heading */
+}
+
+/* Recipe list */
+main ul {
+  list-style: none; /* remove bullets */
+  padding: 0;
+  text-align: left; /* align list items to left */
+}
+
+main ul li {
+  margin: 1rem 0; /* space between items */
+}
+
+main ul li a {
+  text-decoration: none;
+  color: #d35400; /* warm orange color */
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background: #f5cda1; /* same warm color as hero */
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #d35400;
+  text-decoration: none;
+}
