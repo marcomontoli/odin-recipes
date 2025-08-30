@@ -1,17 +1,21 @@
-/* Base reset and full height layout */
+/* Box sizing and base reset */
+* {
+  box-sizing: border-box; /* include padding/border in width */
+}
+
 html, body {
   height: 100%; /* ensure body fills the viewport */
   margin: 0;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* page at least full viewport height */
-  font-family: Arial, sans-serif;
-  line-height: 1;
-  background-color: #fff8f0; /* warm light background */
-  color: #333; /* dark text */
+  display: flex; /* use flexbox */
+  flex-direction: column; /* stack items top to bottom */
+  min-height: 100vh; /* body is at least full screen height */
+  font-family: Arial, sans-serif; /* font style */
+  line-height: 1.5; /* better text spacing */
+  background-color: #fff8f0; /* light warm background */
+  color: #333; /* dark text color */
 }
 
 /* HERO SECTION */
@@ -25,9 +29,10 @@ header.hero {
 /* MAIN CONTENT */
 main {
   flex: 1; /* takes remaining space, pushes footer down */
-  padding: 2rem;
-  max-width: 56rem;
-  margin: 5rem;
+  width: 100%; /* full width of parent */
+  max-width: 56rem; /* but never larger than 56rem */
+  margin: 5rem auto; /* 5rem top/bottom, auto left/right to center */
+  padding: 2rem; /* inner spacing */
 }
 
 main h2 {
@@ -58,6 +63,7 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+  margin-top: auto; /* ensures footer stays at bottom in flex layout */
 }
 
 footer a {
