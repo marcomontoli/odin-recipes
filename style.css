@@ -56,6 +56,10 @@ main ul li a {
   font-weight: bold;
 }
 
+main img {
+  border-radius: 8px; /* rounded borders */
+}
+
 /* FOOTER */
 footer {
   background: #f5cda1; /* same warm color as hero */
